@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Docker App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Flask Docker App</h1>
+        <p>This is a sample Flask application ready for containerization.</p>
+        <div id="status">Status: <span id="status-indicator">Not checked</span></div>
+        <button id="check-status-btn">Check Status</button>
+    </div>
+
+    <script>
+        document.getElementById('check-status-btn').addEventListener('click', async () => {
+            try {
+                const response = await fetch('/health');
+                const data = await response.json();
+                
+                const statusIndicator = document.getElementById('status-indicator');
+                statusIndicator.textContent = data.status;
+                statusIndicator.style.color = 'green';
+            } catch (error) {
+                const statusIndicator = document.getElementById('status-indicator');
+                statusIndicator.textContent = 'Error';
+                statusIndicator.style.color = 'red';
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>
