@@ -1,39 +1,39 @@
 
 ### 1.1 Write requirements.txt
 
-- [ ] Add the following dependencies:
+- [X] Add the following dependencies:
   - flask
-  - gunicorn
+  -
 
 ### 1.2 Write main.py
 
-- [ ] Create a Flask app instance
-- [ ] Define a route for `/` that renders `index.html`
-- [ ] Make the app listen on `0.0.0.0` port `5000`
-- [ ] Add a `/health` route that returns `{"status": "ok"}`
+- [x] Create a Flask app instance
+- [x] Define a route for `/` that renders `index.html`
+- [x] Make the app listen on `0.0.0.0` port `5000`
+- [x] Add a `/health` route that returns `{"status": "ok"}`
 
 ### 1.3 Download SVG Logos
 
-- [ ] Save the Docker logo SVG into `app/static/images/docker-logo.svg`
-- [ ] Save the Flask logo SVG into `app/static/images/flask-logo.svg`
+- [] Save the Docker logo SVG into `app/static/images/docker-logo.svg`
+- [] Save the Flask logo SVG into `app/static/images/flask-logo.svg`
 
 ### 1.4 Create index.html
 
-- [ ] Add a simple navbar with the text "Docker Learning Sandbox"
-- [ ] Display the Docker SVG logo
-- [ ] Display the Flask SVG logo
-- [ ] Add a heading: "Learning Containerization with Flask"
-- [ ] Add basic inline CSS or a style block for the navbar
-- [ ] Use Jinja2 url_for to reference static files
+- [X] Add a simple navbar with the text "Docker Learning Sandbox"
+- [X] Display the Docker SVG logo
+- [X] Display the Flask SVG logo
+- [X] Add a heading: "Learning Containerization with Flask"
+- [X] Add basic inline CSS or a style block for the navbar
+- [X] Use Jinja2 url_for to reference static files
 
 ### 1.5 Test Locally (Without Docker)
 
-- [ ] Create a virtual environment: `python -m venv venv`
-- [ ] Activate it: `source venv/bin/activate`
-- [ ] Install dependencies: `pip install -r requirements.txt`
-- [ ] Run the app: `python app/main.py`
-- [ ] Open browser at `http://localhost:5000` and confirm it works
-- [ ] Stop the server with `Ctrl+C`
+- [X] Create a virtual environment: `python -m venv venv`
+- [X] Activate it: `source venv/bin/activate`
+- [X] Install dependencies: `pip install -r requirements.txt`
+- [X] Run the app: `python app/main.py`
+- [X] Open browser at `http://localhost:5000` and confirm it works
+- [X] Stop the server with `Ctrl+C`
 
 ---
 
